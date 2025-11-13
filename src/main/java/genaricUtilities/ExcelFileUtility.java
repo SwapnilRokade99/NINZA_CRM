@@ -2,6 +2,7 @@ package genaricUtilities;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.util.Properties;
 
 import org.apache.poi.EncryptedDocumentException;
 import org.apache.poi.ss.usermodel.Sheet;
@@ -19,6 +20,7 @@ public class ExcelFileUtility {
 		
 		
 	}
+	
 	
 	public int getRowCount(String sheetName) throws EncryptedDocumentException, IOException {
 		FileInputStream fis=new FileInputStream("./src/test/resources/Ninza_CRM.xlsx");
